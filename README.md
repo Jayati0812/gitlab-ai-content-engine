@@ -180,7 +180,7 @@ Supported roles include:
 |---|---:|---:|---:|---:|
 | Writer | ✅ | ❌ | ❌ | ❌ |
 | Reviewer | ✅ | ✅ | ❌ | ❌ |
-| Approver | ❌ | ✅ | ✅ | ❌ |
+| Approver | ✅ | ✅ | ✅ | ❌ |
 | Admin | ✅ | ✅ | ✅ | ✅ |
 
 New Firebase users receive the default `writer` role. Elevated roles are managed by administrators.
@@ -191,9 +191,11 @@ New Firebase users receive the default `writer` role. Elevated roles are managed
 
 <img width="1000" height="524" alt="Document Processing Pipeline" src="https://github.com/user-attachments/assets/3491c526-708c-463e-af16-5c48dfb6cc44" />
 
-```
 
-### Supported formats
+
+---
+
+#  Supported Documents
 
 | Format | Supported |
 |---|---|
@@ -263,27 +265,6 @@ PDF source markers can preserve the original filename and page number.
 
 <img width="1000" height="700" alt="AI Workflow_ From Upload to Export" src="https://github.com/user-attachments/assets/bcfa810e-630f-4123-ab2a-1d2aea9420a8" />
 
-```
-
-### Context Reader
-
-Responsible for extracting structured evidence from source documents.
-
-### Documentation Writer
-
-Transforms the evidence into documentation.
-
-### Technical Reviewer
-
-Checks the generated content for technical problems and unsupported information.
-
-### Tone Optimizer
-
-Improves the style and readability.
-
-### Publishing Coordinator
-
-Prepares the final output while respecting the approval workflow.
 
 ---
 
@@ -518,11 +499,10 @@ gitlab-ai-content-engine/
 
 ## AI
 
-- Multi-stage AI workflow
-- Source/context grounding
-- Structured outputs
-- Technical review
-- Tone optimization
+- Crew AI
+- Pydantic
+- Chroma DB 
+- Gemini as primary LLM
 - Mock AI mode
 - OpenAI-compatible provider configuration
 
@@ -961,30 +941,6 @@ This project is intended for development, demonstration, and educational purpose
 
 ---
 
-#  Links
-
-**GitHub Repository**
-
-https://github.com/DhamodharThyiagarajan/gitlab-ai-content-engine/
-
-**Live Frontend**
-
-https://gitlab-ai-content-engine-nu.vercel.app/login
-
-**Production Backend**
-
-https://gitlab-ai-content-engine-api.onrender.com
-
-**FastAPI Swagger**
-
-https://gitlab-ai-content-engine-api.onrender.com/docs
-
-**OpenAPI Specification**
-
-https://gitlab-ai-content-engine-api.onrender.com/openapi.json
-
----
-
 ---
 # Screenshots
 ---
@@ -1048,12 +1004,12 @@ This project was developed collaboratively by:
 
 | Contributor | Role / Contribution |
 |---|---|
-| Jayati Nilekar | AI & Retrieval — CrewAI, ChromaDB, Pydantic |
-| Harsh Singh | Backend & API — FastAPI, Job Intake,  Markdown formatting and Model upgradation |
-| Dhamodhar Thiyagarajan | Frontend — Next.js, React.js, Tailwind CSS; Backend — Firebase Auth, Auth Endpoints, Supabase DB & Backend Integration |
-| Harsh Raj | Deployment & Database — Docker Compose, SQLite/PostgreSQL |
+| Jayati Nilekar | AI & Retrieval |
+| Harsh Singh | Backend & API, Job Intake,  Markdown formatting and Model upgradation |
+| Dhamodhar Thiyagarajan | Frontend & Backend — Firebase Auth, Auth Endpoints, Supabase DB & Backend Integration |
+| Harsh Raj | Deployment & Database  |
 | Vidya Lamkhade | QA & Testing — Pipeline Validation, Mock AI, API Testing |
 | Anjali Kashyap | Documentation — Workflow Documentation |
-| Rishi Darshan | Architecture — System Architecture |
+| Rishi Darshan | Planning & Project Development |
 
 All contributors participated collaboratively in the development, testing, documentation, and refinement of the project.
